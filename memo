@@ -1,0 +1,10 @@
+
+venv\Scripts\activate
+set FLASK_APP=server.py
+flask run
+
+Need a database named "Cylera" pre-created in MySQL
+Need chart.js for creating chart
+npm install chart.js --save
+
+to start server, use npm start
