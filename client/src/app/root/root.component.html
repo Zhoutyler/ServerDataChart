@@ -1,0 +1,15 @@
+<div class="header">
+        <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Server ID" [(ngModel)]="serverID">
+                <input type="text" class="form-control" placeholder="End Time" [(ngModel)]="endTime">
+                <input type="text" class="form-control" placeholder="Window Length" [(ngModel)]="windowTime">
+                <input type="text" class="form-control" placeholder="Window number" [(ngModel)]="numWindow">
+                <button type="button" class="btn btn-primary" (click)="onClickQueryBtn()">Search</button>
+            </div>
+</div>
+
+
+<div *ngIf="chart" class="body">
+    <canvas id="canvas">{{ chart }}</canvas>
+</div>
+  
